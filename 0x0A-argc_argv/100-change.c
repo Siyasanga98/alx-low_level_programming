@@ -2,16 +2,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main - prints the min number of coins 
-* @argc: number of arguements 
-* @argv: array of arguements 
+* main - prints the min number of coins
+* @argc: number of arguements
+* @argv: array of arguements
 * Return: 0 - success.
 */
 int main(int argc, char *argv[])
 {
-	int cents,ncoins = 0;
+	int cents, ncoins = 0;
 
-	if (argc != 2) 
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 			cents -= 25;
 		else if (cents >= 10)
 			cents -= 10;
-		else if (cents >= 5 )
+		else if (cents >= 5)
 			cents -= 5;
 		else if (cents >= 2)
 			cents -= 2;
@@ -34,5 +34,5 @@ int main(int argc, char *argv[])
 		ncoins += 1;
 	}
 	printf("%d\n", ncoins);
-	return(0);
+	return (0);
 }

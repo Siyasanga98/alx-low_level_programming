@@ -5,25 +5,18 @@
  * @c : to assign
  * Return: NULL if fail 
  */
-char *create_array(unsigned int size, char c);
-
+char *create_array(unsigned int size, char c)
 {
-    if (size == 0)
-    {
-        return NULL;
-    }
-    
-    char array;
-    array = (char *) malloc(size * sizeof(char));
-    if (array == NULL)
-    {
-        return NULL;
-    }
+	char *str;
+	unsigned int i;
 
-    for (unsigned int i = 0; i < size; i++)
-    {
-        array[i] = c;
-    }
+	str = malloc(sizeof(char) *size);
+	if (size == 0 || str == NULL)
+		return (NULL);
 
-    return array;
+	for (i = 0; i < size; i++)
+	{
+		str[i] = c;
+	}
+	return (str);
 }

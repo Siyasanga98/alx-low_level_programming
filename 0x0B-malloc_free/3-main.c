@@ -14,7 +14,7 @@ void print_grid(int **grid, int width, int height)
 {
 	int w;
 	int h;
-	
+
 	h = 0;
 	while (h < height)
 	{

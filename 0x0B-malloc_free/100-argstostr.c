@@ -15,11 +15,11 @@ char *argstostr(int ac, char **av)
 	int k = 0;
 	int len = 0;
 	char *str;
-	
+
 	if (ac == 0 || av == NULL)
 		return (NULL);
 
-	for (i = 0; i < ac; i++) 
+	for (i = 0; i < ac; i++)
 
 		for (j = 0; av[i][j]; j++)
 		{
@@ -43,7 +43,7 @@ char *argstostr(int ac, char **av)
 		k++;
 	}
 	str[k] = '\0';
-	
+
 	return (str);
 
 	}

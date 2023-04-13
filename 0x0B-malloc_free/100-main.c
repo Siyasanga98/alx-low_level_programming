@@ -4,13 +4,14 @@
 
 /**
 * main - check the code for ALX School students.
-*
+*@ac: input
+*@av: input
 * Return: Always 0.
 */
 int main(int ac, char *av[])
 {
 	char *s;
-	
+
 	s = argstostr(ac, av);
 	if (s == NULL)
 	{

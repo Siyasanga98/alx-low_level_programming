@@ -1,1 +1,1 @@
-compile
+task 0

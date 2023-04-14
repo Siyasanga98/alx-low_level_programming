@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 /**
-*main: - prints the multipliation of two args number
+*main: - prints the multiplication of two args number
 *@argc: argument count
 *@argv: argument vector
 *Return: Always 0

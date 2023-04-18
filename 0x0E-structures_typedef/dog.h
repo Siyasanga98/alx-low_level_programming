@@ -2,12 +2,12 @@
 #define DOG
 
 /**
-*struct dog class
+*struct - dog class
 *@name: dog name
-*@age: dog age 
+*@age: dog age
 *@owner: owner of the dog
 */
-typedef struct dog 
+	typedef struct dog
 {
 	char *name;
 	float age;

@@ -12,7 +12,7 @@ int op_mod(int a, int b);
 * @b:second no
 * Return: the difference
 */
-int op_add(int a, int b)
+int op_add(int a, int b);
 {
 	return(a + b);
 }
@@ -34,7 +34,7 @@ int op_add(int a, int b);
 * @b:second no
 * Return: the product
 */
-int op_add(int a, int b)
+int op_add(int a, int b);
 {
         return(a * b);
 }
@@ -54,7 +54,7 @@ int op_add(int a, int b);
 * @b:second no
 * Return: the remainder
 */
-int op_add(int a, int b)
+int op_add(int a, int b);
 {
         return(a % b);
 }

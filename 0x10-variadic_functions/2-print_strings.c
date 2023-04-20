@@ -6,7 +6,7 @@
 /**
 * print_strings - Prints strings
 * @separator: string to be printed
-* @n: no of strings passed 
+* @n: no of strings passed
 * @...: arguments no to be printed
 * Return: void
 */

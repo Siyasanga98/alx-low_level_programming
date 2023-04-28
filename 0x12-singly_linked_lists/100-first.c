@@ -11,8 +11,3 @@ void __attribute__ ((constructor)) first()
 	printf("You're beat! and yet, you must allow");
 	printf(",\nI bore my house upon my back!\n");
 }
-
-int main(void)
-{
-	return (0);
-}

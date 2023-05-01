@@ -8,10 +8,10 @@
  */
 int _strlen_recursion(char *s)
 {
-        if (*s == '\0')
-                return (0);
-        else
-                return (_strlen_recursion(s + 1) + 1);
+	if (*s == '\0')
+		return (0);
+	else
+		return (_strlen_recursion(s + 1) + 1);
 }
 
 /**
@@ -23,26 +23,26 @@ int _strlen_recursion(char *s)
  */
 int comparator(char *s, int len)
 {
-        if (len <= 1)
-                return (1);
-        else if (*s == *(s + len - 1))
-                return (comparator(s + 1, len - 2));
-        else
-                return (0);
+	if (len <= 1)
+		return (1);
+	else if (*s == *(s + len - 1))
+		return (comparator(s + 1, len - 2));
+	else
+		return (0);
 }
 
 /**
  * is_palindrome - detects if a string is a palindrome.
  * @s: string
  *
- * Return: 1 if a palindrome, or 0 
+ * Return: 1 if a palindrome, or 0
  */
 int is_palindrome(char *s)
 {
-        int len = _strlen_recursion(s);
+	int len = _strlen_recursion(s);
 
-        if (len <= 1)
-                return (1);
-        else
-                return (comparator(s, len));
+	if (len <= 1)
+		return (1);
+	else
+		return (comparator(s, len));
 }

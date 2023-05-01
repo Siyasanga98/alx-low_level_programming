@@ -1,4 +1,7 @@
-#include "function_pointers.h"
+#ifndef FUNCTION_POINTERS_H
+#define FUNCTION_POINTERS_H
+#include <stddef.h>
+
 /**
  * print_name - prints a name
  * @name: pointer to the name to print
@@ -8,8 +11,7 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	  if (array == NULL || action == NULL)
-	return;
-
+	if (name != NULL && f != NULL)
 	f(name);
 }
+#endif

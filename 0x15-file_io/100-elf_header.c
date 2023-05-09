@@ -268,5 +268,20 @@ void print_elf_header(const char *filename)
     print_type(header.e_type, header.e_ident);
     print_entry(header.e_entry, header.e_ident);
 
-    close_elf(fd);
+ 
+   close_elf(fd);
+
+}
+     
+int main(int argc, char **argv)
+{
+
+if (argc != 2)
+{
+dprintf(STDERR_FILENO, "Usage : ./elf_header filename\n");
+exit(98);
+}
+print_elf_header(argv[1]);
+return (0);
+
 }

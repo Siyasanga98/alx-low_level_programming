@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <elf.h>
 
-void print_elf_header(const char* filename);
+void check_elf(const char* filename);
 void print_magic(const unsigned char* magic);
 void print_class(unsigned char class);
 void print_data(unsigned char data);
@@ -22,7 +22,7 @@ void close_elf (int elf);
  *
  * Description: if a dile s not the elf file exit
  */
-void check_elfi(unsigned char *e_ident)
+void check_elf(unsigned char *e_ident)
 {
 	int index;
 

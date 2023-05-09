@@ -30,11 +30,12 @@ void error_file(int errcode, const char *format, ...)
  * @argc: the number of command-line arguments
  * @argv: an array of command-line arguments
  *
- * Return: 0 on success, or an exit status code on failure
+ * Return: 0 on success, or an exit on failure
  */
 int main(int argc, char *argv[])
 {
-	int fd_from, fd_to, num_read, num_written;
+	int fd_from, fd_to;
+	ssize_t num_read = 0, num_written = 0;
 	char buf[BUF_SIZE];
 
 	if (argc != 3)

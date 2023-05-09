@@ -275,8 +275,8 @@ close_elf(fd);
 }
 /**
  * main - the main function
- * @argc: no of arguements 
- * @argv: array of pointers 
+ * @argc: no of arguements
+ * @argv: array of pointers
  *
  * Return: nothing
  */

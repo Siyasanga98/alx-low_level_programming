@@ -138,16 +138,16 @@ void print_abi(unsigned char *e_ident)
 			printf("UNIX - System V\n");
 			break;
 		case ELFOSABI_HPUX:
-			printf("HP-UX\n");
+			printf("UNIX - HP-UX\n");
 			break;
 		case ELFOSABI_NETBSD:
-			printf("NetBSD\n");
+			printf("UNIX - NetBSD\n");
 			break;
 		case ELFOSABI_LINUX:
-			printf("Linux\n");
+			printf("UNIX - Linux\n");
 			break;
 		case ELFOSABI_SOLARIS:
-			printf("Solaris\n");
+			printf("UNIX - Solaris\n");
 			break;
 		default:
 			printf("Unknown OS/ABI\n");
@@ -273,6 +273,13 @@ print_entry(header.e_entry, header.e_ident);
 close_elf(fd);
 
 }
+/**
+ * main - the main function
+ * @argc: no of arguements 
+ * @argv: array of pointers 
+ *
+ * Return: nothing
+ */
 int main(int argc, char **argv)
 {
 

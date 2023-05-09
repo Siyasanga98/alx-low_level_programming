@@ -251,10 +251,14 @@ void print_elf_header(const char *filename)
 		perror("Error opening file");
 		exit(98);
 	}
+
 	if (read(fd, &header, sizeof(header)) != sizeof(header))
+	{
 		perror("Error reading file");
-	exit(98);
-}
+		exit(98);
+	}
+
+
 
 check_elf(header.e_ident);
 

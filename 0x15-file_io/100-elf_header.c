@@ -150,8 +150,7 @@ void print_abi(unsigned char *e_ident)
 			printf("UNIX - Solaris\n");
 			break;
 		default:
-			printf("Unknown OS/ABI\n");
-			exit(98);
+			printf("<unknown: %d>\n", e_ident[EI_OSABI]);
 	}
 }
 

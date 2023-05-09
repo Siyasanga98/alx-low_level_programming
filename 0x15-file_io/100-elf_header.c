@@ -208,15 +208,11 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
  */
 void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
+printf("  Entry point address:               ");
 	if (e_ident[EI_CLASS] == ELFCLASS32)
-		printf("  Entry point address:               0x%08lx\n", e_entry);
-	else if (e_ident[EI_CLASS] == ELFCLASS64)
-		printf("  Entry point address:               0x%016lx\n", e_entry);
+		printf("%#x\n", (unsigned int)e_entry);
 	else
-	{
-		printf("Invalid ELF class\n");
-		exit(98);
-	}
+		printf("%#lx\n", e_entry);
 }
 
 /**

@@ -49,7 +49,8 @@ int main(int argc, char *argv[])
 	if (fd_to == -1)
 		error_file(99, "Can't write to file %s\n", argv[2]);
 
-	while ((num_read = read(fd_from, buf, BUF_SIZE)) > 0) {
+	while ((num_read = read(fd_from, buf, BUF_SIZE)) > 0) 
+	{
 		num_written = write(fd_to, buf, num_read);
 		if (num_written != num_read)
 			error_file(99, "Can't write to file %s\n", argv[2]);
@@ -64,6 +65,5 @@ int main(int argc, char *argv[])
 	if (close(fd_to) == -1)
 		error_file(100, "Can't close fd %d\n", fd_to);
 
-	return 0;
+	return(0);
 }
-

@@ -49,16 +49,17 @@ void check_elf(unsigned char *e_ident)
 void print_magic(unsigned char *e_ident)
 {
 	int i;
+	unsigned char byte;
 
 	printf("  Magic:   ");
 
-	for (i = 0; i < EI_NIDENT; i++)
+	for (i = 0; i <  EI_NIDENT - 1; i++)
 	{
-		unsigned char byte = e_ident[i];
+		byte = e_ident[i];
 
 		printf("%02x ", byte);
 	}
-	printf("\n");
+	printf("%02x\n", byte);
 }
 
 /**

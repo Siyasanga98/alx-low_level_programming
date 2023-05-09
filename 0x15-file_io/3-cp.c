@@ -45,7 +45,7 @@ int main(int argc, char *argv[])
 	if (fd_from == -1)
 		error_file(98, "Can't read from file %s\n", argv[1]);
 
-	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0644);
+	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_to == -1)
 		error_file(99, "Can't write to file %s\n", argv[2]);
 

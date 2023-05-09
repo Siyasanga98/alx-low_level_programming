@@ -1,3 +1,4 @@
+#include "main.h"
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -5,7 +6,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <elf.h>
-#include "main.h"
 
 void check_elf(unsigned char *e_ident);
 void print_magic(unsigned char *e_ident);
@@ -240,7 +240,8 @@ void close_elf(int elf)
  */
 void print_elf_header(const char *filename)
 {
-	 Elf64_Ehdr header;
+
+	Elf64_Ehdr header;
 
     int fd = open(filename, O_RDONLY);
     if (fd == -1)

@@ -6,15 +6,15 @@
 #include <unistd.h>
 #include <elf.h>
 
-void check_elf(const char* filename);
-void print_magic(const unsigned char* magic);
-void print_class(unsigned char class);
-void print_data(unsigned char data);
-void print_version(unsigned char version);
-void print_abi(unsigned char abi);
-void print_osabi(unsigned char osabi);
-void print_type(unsigned short type);
-void print_entry(Elf64_Addr entry);
+void check_elf(unsigned char *e_ident);
+void print_magic(unsigned char *e_ident);
+void print_class(unsigned char *e_ident);
+void print_data(unsigned char *e_ident);
+void print_version(unsigned char *e_ident);
+void print_abi(unsigned char *e_ident);
+void print_osabi(unsigned char *e_ident);
+void print_type(unsigned int e_type, unsigned char *e_ident);
+void print_entry( unsigned long int  e_entry, unsigned char *e_ident);
 void close_elf (int elf);
 /**
  * check_elf - checks the file

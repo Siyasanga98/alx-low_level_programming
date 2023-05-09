@@ -81,7 +81,6 @@ void print_class(unsigned char *e_ident)
 		break;
 		default:
 		printf("Invalid class\n");
-		exit(98);
 	}
 }
 
@@ -104,7 +103,6 @@ void print_data(unsigned char *e_ident)
 			break;
 		default:
 			printf("Invalid data encoding\n");
-			exit(98);
 	}
 }
 
@@ -195,7 +193,6 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
 			break;
 		default:
 			printf("Unknown type\n");
-			exit(98);
 	}
 }
 

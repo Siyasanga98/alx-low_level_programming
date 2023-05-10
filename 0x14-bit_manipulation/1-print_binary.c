@@ -3,10 +3,9 @@
 
 /**
  * print_binary - Prints the binary representation of a number.
- * @n: The number to print in binary format.
+ * @n: The number to print in binary
  *
- * Description: This function prints the binary representation of a number
- * without using arrays, malloc, or the % or / operators.
+ * Description: This function prints
  */
 void print_binary(unsigned long int n)
 {
